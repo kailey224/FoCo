@@ -1,51 +1,133 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=auto&width=1800&height=200&section=header)
-
-# 🥄FoCo
-현지인이 알려주는 세계 맛집 탐방
+# 🥄 FoCo
+### "현지인이 추천하는 맛집 사이트"
 
 ## 🥨프로젝트 소개
-글로벌 user를 타겟으로 해 영어를 기본 언어로 사용합니다.
-user가 회원가입 시 지정한 나라에서만 게시글을 작성할 수 있으며
-좋아요를 눌러 게시글의 랭킹을 높히거나
-스푼을 눌러 게시글을 북마크에 담을 수 있습니다.
+**FoCo**는 **Food + Recommendation**의 합성어로 여행객을 대상으로 **현지인들만 아는!** 맛집을 소개해주는 사이트입니다.   
+유저 프로필에 등록한 국가에만 게시글을 등록할 수 있고 북마크를 통해 게시글을 저장하고, 저장된 게시글을 검색할 때 mood(식당 분위기)와 foodtype(음식 종류)등으로 검색할 수 있습니다.
+마음에 드는 글에는 좋아요를 누를 수 있고, 각 국가별로 좋아요 순으로 나열된 리뷰를 보며 검증된 정보를 얻을 수 있습니다.
 
-## 🍕개발기간
+#### 🎬[시연영상 보러가기](https://drive.google.com/file/d/1mi7RB3sVGbb3CG__09OEOTuenbuUF3ju/view?usp=sharing)
+### 세부항목보기
+<details><summary>회원가입, 로그인, 로그아웃</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213431633-48c932c5-f428-460e-b277-6a5079ea48ec.gif)
+- input 작성 시 실시간 유효성 검사를 진행하며 UX 개선
+</details>
+
+<details><summary>프로필 변경</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424786-d4abbd4d-268b-41b4-8d0f-bb2ce0dd93e6.gif)
+- 이미지 미리보기를 통해 변경 전 확인 가능
+- input 작성 시 실시간 유효성 검사를 진행하며 UX 개선
+</details>
+
+<details><summary>비밀번호 변경</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424776-1e340e6c-a080-4008-b9b5-11d6b249f3a1.gif)
+- 현재 비밀번호를 확인한 후 비밀번호 변경 진행
+- input 작성 시 실시간 유효성 검사를 진행하며 UX 개선
+</details>
+
+<details><summary>비밀번호 찾기</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424782-e761ff13-7003-4c8e-9fe0-adba03156079.gif)
+- nodemailer를 이용해 기능 구현
+- input 작성 시 실시간 유효성 검사를 진행하며 UX 개선
+</details>
+
+<details><summary>회원탈퇴</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424792-24d5b894-b02c-4df0-89be-158a173c57db.gif)
+- 비밀번호 검증 후 confirm으로 이중확인 후 퇄퇴 진행
+</details>
+
+<details><summary>메인페이지, 나라 조회</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424759-88a4f4f8-439d-4aed-9a77-84738898ff03.gif)
+- 세계지도를 클릭하거나 검색을 통해 원하는 나라의 지정된 위경도로 이동이 가능하며, 해당 나라에 작성된 게시물을 좋아요 순으로 확인 가능
+- 게시글 선택 시, 해당 위치의 도시 숟가락 색이 변경
+- 게시물 오른쪽 상단 클릭 시, 모달창으로 세부 내용 확인이 가능
+- 유저가 원하는 게시글에 좋아요를 누를 수 있으며, 좋아요 갯수를 통해 검증된 정보 확인 가능
+</details>
+
+<details><summary>나라별 세부조회</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424765-c5a5aa0d-dcdd-4729-9c5a-4246ebfb45b2.gif)
+- 좋아요 순으로 정렬된 창의 오른쪽 상단 버튼을 클릭하면 해당 국가의 게시글만 있는 페이지로 이동
+</details>
+
+<details><summary>나라별 필터 기능</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424768-3bbc72d7-a4b1-4db1-b5eb-cf4232c825c6.gif)
+- 필터링 기능을 통해 국가별로 유저들이 작성한 태그들을 모아 저장된 도시, 식당의 분위기, 음식타입으로 여러개의 태그를 넣어 검색 가능
+</details>
+
+<details><summary>북마크, 북마크 필터</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424770-0e2d5fb4-cbc1-4a82-9717-de4cd843c2c4.gif)
+- 원하는 게시글을 북마크 버튼을 통해 저장 가능
+- 필터링 기능을 통해 저장된 게시글 중 원하는 게시글만 검색 가능
+</details>
+
+<details><summary>게시글 작성</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424796-8bf25871-c493-4820-8178-da51f830ae5b.gif)
+- 주소 작성 시 AutoComplete기능으로 관련 주소 목록이 나오면서 보다 편리한 UX 경험을 완성 
+- `browser-image-compression` 으로 이미지 리사이징을 통해 로딩 속도 개선
+
+![image](https://user-images.githubusercontent.com/103574215/213435290-f6864f76-52f6-4ff3-b242-78d379d6aa30.png)
+</details>
+
+<details><summary>현지인 검증</summary>
+    
+![image](https://user-images.githubusercontent.com/103574215/213424799-59b992ad-c8e8-482e-b7d7-c5c89878cf19.gif)
+- ‘현지인 맛집 추천 사이트’ 라는 방향성을 위해 프로필에 등록된 나라가 아닌 다른 나라 가게의 게시글은 업로드 불가
+</details>
+
+
+
+## 🍕 개발기간
 2022년 12월 11일 ~ 2022년 12월 29일 (약 3주)
-주말 제외 매일 아침 8시 45분 스크럼
-![image](/uploads/1a4274a76419ed1e00f0edbf1b7bb801/image.png)
 
-## 🍔멤버구성
+## 🍔 멤버구성
 
-| Name | Position | MBTI | Role | 
-| ------ | ------ | ----- | ----- |
-| 홍희선 | FrontEnd | ENFJ | 팀장, main map, ranking, contents, multiSelectbox, dropdown 등 담당, 모든 페이지 총괄 및 해결 |
-| 강민희 | FrontEnd | ENTP | review, post modal, autocomplete 담당 |
-| 김혜지 | FrontEnd | ENFJ | bookmark, modal, route 담당 |
-| 이화정 | FrontEnd | INFP | user 관련 login, logout, resister, profile, user정보 수정 등 담당 |
-| 한승주 | BackEnd | ESTP | Only One, 단 하나의 백엔드 |
+| Name | Position | Role | 
+| ------ | ------ | ----- |
+| 홍희선 | Frontend | 팀장, main map, ranking, contents, multiSelectbox, dropdown 등 담당, 모든 페이지 총괄 및 해결 |
+| 강민희 | Frontend | review, post modal, autocomplete 담당 |
+| 김혜지 | Frontend | Bookmark, modal, route 담당 |
+| 이화정 | Frontend | user 관련 [login](https://github.com/kailey224/FoCo/tree/main/client/src/component/Login), logout, resister, profile, user정보 수정 등 담당 |
+| 한승주 | Backend | Only One, 단 하나의 백엔드 |
 
-## 🍟개발 환경
-협업 툴 ![GitLab](https://img.shields.io/badge/gitlab-444444?style=flat&logo=gitlab)
-![Notion](https://img.shields.io/badge/notion-444444?style=flat&logo=notion)
-![Jira](https://img.shields.io/badge/jira-444444?style=flat&logo=jira)
-![Figma](https://img.shields.io/badge/figma-444444?style=flat&logo=figma)
+## 🍟 개발 환경
+Front
+<img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
+<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+<img alt="Axios" src="https://img.shields.io/badge/-Axios-5A29E4?style=flat-square&logo=Axios&logoColor=white" />
+<img alt="styled components" src="https://img.shields.io/badge/-styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white" />
 
-시스템 ![Yarn](https://img.shields.io/badge/yarn-444444?style=flat&logo=yarn)
+Back
+<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+<img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white" />
+<img alt="Nodejs" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
+<img alt="Express" src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=Express&logoColor=white" />
 
-사용 언어 ![HTML5](https://img.shields.io/badge/html5-444444?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/css3-444444?style=flat&logo=css3)
-![TypeScript](https://img.shields.io/badge/typescript-444444?style=flat&logo=typescript)
+Deploy / Tool
+<img alt="NGINX" src="https://img.shields.io/badge/-NGINX-009639?style=flat-square&logo=NGINX&logoColor=white" />
+<img alt="PM2" src="https://img.shields.io/badge/-PM2-2B037A?style=flat-square&logo=PM2&logoColor=white" />
+<img alt="Amazon AWS" src="https://img.shields.io/badge/-Amazon AWS-232F3E?style=flat-square&logo=Amazon AWS&logoColor=white" />
+<img alt="Yarn" src="https://img.shields.io/badge/-Yarn-2C8EBB?style=flat-square&logo=Yarn&logoColor=white" />
+<img alt="ESLint" src="https://img.shields.io/badge/-ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white" />
+<img alt="Prettier" src="https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=Prettier&logoColor=white" />
 
-라이브러리 ![React](https://img.shields.io/badge/react-444444?style=flat&logo=react)
-![StyledComponents](https://img.shields.io/badge/styledcomponents-444444?style=flat&logo=styled-components)
-![Axios](https://img.shields.io/badge/axios-444444?style=flat&logo=axios)
+Communication
+<img alt="GitLab" src="https://img.shields.io/badge/-GitLab-FC6D26?style=flat-square&logo=GitLab&logoColor=white" />
+<img alt="Jira" src="https://img.shields.io/badge/-Jira-0052CC?style=flat-square&logo=Jira&logoColor=white" />
+<img alt="Postman" src="https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white" />
+<img alt="Notion" src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white" />
+<img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white" />
 
-그 외 ![ESLint](https://img.shields.io/badge/eslint-444444?style=flat&logo=eslint)
-![Prettier](https://img.shields.io/badge/prettier-444444?style=flat&logo=prettier)
-
-훅: `useState`, `useEffect`, `useRef`, `useNavigate`, `useParams`, `Cookies` 등
-
-## 🍖개발 규칙
+## 🍖 개발 규칙
 ### 커밋컨벤션
 - `feat`: 기능 추가
 - `fix`: 버그 고친 경우
@@ -61,124 +143,5 @@ user가 회원가입 시 지정한 나라에서만 게시글을 작성할 수 �
 `feature/FE/기능명`
 `featrue/BE/기능명`
 ### 코딩컨벤션
-- 변수명 `**camelCase**`
-- components 이름은 **`Pascalcase`**
-
-## 🌭주요사항 
-### 기능
-- **라우트**: ROUTE 모듈화 및 사용
-- **Icontent**: 자주 사용되는 변수의 타입 지정 모듈화
-- **usefulFunction**: 자주 사용되는 validateNickname, validateEmail, validatePassword 함수 저장
----
-#### 회원가입
-- **이메일**: 이메일 형식 체크
-- **닉네임**: 영어 체크
-- **비밀번호**: 글자 수 체크
-- **비밀번호 확인**: 비밀번호 일치 체크
-- **나라 지정**
----
-#### 로그인
-###### cookie로 user의 token 확인
-- **이메일**: 이메일 형식 체크
-- **비밀번호**: 글자 수 체크
-- **비밀번호 찾기**: 이메일 확인 후 해당 이메일로 임시 비밀번호 전송
----
-#### 회원정보수정
-###### localStorage로 userNum 확인
-- **메뉴**: click 시 지정 링크로 이동
-    - **프로필 변경**
-        - 기기 내에 저장된 이미지를 리사이징해 저장 및 프로필 이미지 변경
-    - **비밀번호 변경**
-        - 현재 비밀번호, 바꾼 비밀번호, 비밀번호 재확인 후 alert
-    - **회원탈퇴**: 쿠키로 해당 유저 확인
-        - 비밀번호: 비밀번호 확인 후 alert로 탈퇴 재확인
----
-#### 회원 상태별 헤더 변경
-###### cookie로 user의 token 확인
-- **로그인된 유저** ![image](/uploads/1fbc7501d65638d77e3df500b470e2e9/image.png)
-- **로그아웃 유저** ![image](/uploads/b8eef8ad0c03c47441ade3a7ecba5ab3/image.png)
----
-#### 맵
-###### 구글 맵 API 사용, 지도에서 특정 나라 선택 시 지정된 나라 확대
-- **Dropdown**
-    - geometries 사용
-    - 선택된 나라의 저장된 위, 경도를 불러와 해당 나라로 이동 및 확대
-- **Marker**: 해당 나라의 등록된 맛집의 위치가 지도에 표시
-- **Ranking**
-    - 해당 나라의 맛집 정보가 좋아요 순으로 표시
-    - 각 게시물의 좋아요 수 확인 가능
-- **more**: 해당 나라의 맛집 전체를 확인하는 페이지로 이동
----
-#### mutiSelectBox
-###### Content, Bookmark에서 활용
-- **Content**: 지정 나라와 Dropdown에서 선택한 정보대로 filtering해 content 리턴
-- **Bookmark**: 해당 user의 userNum 확인
---- 
-#### 상세 컨텐츠 기능(Content)
-###### 선택한 나라의 맛집 전체를 확인
-- **나라별**: 맵에서 선택한 나라별로 출력되도록 useParams를 사용해 country filtering
-- **Dropdown**: user가 원하는 정보만 filtering 가능
-    - city, food, mood
-- **컨텐츠**
-    - 해당 게시글의 좋아요 수 확인 가능 및 hover 시 지역 확인 가능
-    - post된 대표 이미지 click 시 모달창으로 이동
----
-#### Bookmark
-###### user가 bookmark 한 post를 불러와 user에게 표출
-- 컨텐츠와 기능적으로 동일하며 bookmark에 대한 필터만 추가
----
-#### 모달
-###### 서버에서 해당 post 불러와 user에게 표출
-- **아이콘 바**
-    - 좋아요 상태, 좋아요 수, bookmark 상태 확인
-    - 모달 닫기
-- **타이틀**
-    - 상호명, 위치
-    - 평점: Rating 라이브러리 사용해 반올림한 평점값 표출
-    - 프로필: 작성자 프로필 이미지
-- **이미지박스**: 해당 post의 이미지 나열, 마우스 휠로 가로 scroll 구동
-- **텍스트박스**: 해당 post의 태그와 코멘트 
-- 모달 밖 배경화면 scroll 금지 
----
-#### Post
-- **post 작성 모달**: 해당 post의 input 저장 및 서버로 전달
-    - 상호명
-    - 위치: autocomplete 사용해 상호명 입력 시 위도와 경도 저장
-    - 평점: Rating 라이브러리로 평점 input 저장
-    - 이미지: 6개 이상 추가 금지 및 각 이미지 또는 전체 이미지 삭제 가능
-        - 마우스 휠로 가로 scroll 구동
-    - 태그: 각 3개 씩 선택 가능
-    - 후기: 글자 수 제한(500자)
-- **리뷰**: user가 작성한 리뷰 내역 확인 및 수정, 삭제 가능
-    - 수정: post 작성 모달로 이동
-    - 삭제: post 삭제 재확인
-
----
-
-### 페이지
-<!-- 회원가입페이지
-
-로그인페이지
-
-회원정보수정페이지
-![image](/uploads/4d27886e41dee922a793c35b903077b4/image.png)
-비밀번호 변경 페이지
-![image](/uploads/6fbb050709a03b0106e285b297a3acfd/image.png)
-회원탈퇴 페이지
-![image](/uploads/a535081aa44a73f30f117d15c499046e/image.png) -->
-메인페이지
-![image](/uploads/f0c89b2a012a867c861669280c10852c/image.png)
-<!-- 나라별 페이지
-
-상세페이지
-
-콘텐츠모달
-
-북마크페이지
-
-리뷰페이지
-
-리뷰모달 -->
-
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&width=auto&height=200&section=footer)
+- 변수명 `camelCase`
+- components 이름은 `Pascalcase`
