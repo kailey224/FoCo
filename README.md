@@ -1,13 +1,14 @@
 # 🥄 FoCo
 ### "현지인이 추천하는 맛집 사이트"
-
-## 🥨프로젝트 소개
 **FoCo**는 **Food + Recommendation**의 합성어로 여행객을 대상으로 **현지인들만 아는!** 맛집을 소개해주는 사이트입니다.   
 유저 프로필에 등록한 국가에만 게시글을 등록할 수 있고 북마크를 통해 게시글을 저장하고, 저장된 게시글을 검색할 때 mood(식당 분위기)와 foodtype(음식 종류)등으로 검색할 수 있습니다.
 마음에 드는 글에는 좋아요를 누를 수 있고, 각 국가별로 좋아요 순으로 나열된 리뷰를 보며 검증된 정보를 얻을 수 있습니다.
+<br/>
 
-#### 🎬[시연영상 보러가기](https://drive.google.com/file/d/1mi7RB3sVGbb3CG__09OEOTuenbuUF3ju/view?usp=sharing)
-### 세부항목보기
+## 🥨프로젝트 소개
+#### 📁 [API 문서](https://documenter.getpostman.com/view/16841571/2s8Z6u5usD)
+#### 🎬 [시연영상 보러가기](https://drive.google.com/file/d/1mi7RB3sVGbb3CG__09OEOTuenbuUF3ju/view?usp=sharing)
+#### 📌 세부항목보기
 <details><summary>회원가입, 로그인, 로그아웃</summary>
     
 ![image](https://user-images.githubusercontent.com/103574215/213431633-48c932c5-f428-460e-b277-6a5079ea48ec.gif)
@@ -89,14 +90,14 @@
 ## 🍕 개발기간
 2022년 12월 11일 ~ 2022년 12월 29일 (약 3주)
 
-## 🍔 멤버구성
+## 🍔 멤버구성 및 역할
 
 | Name | Position | Role | 
 | ------ | ------ | ----- |
 | 홍희선 | Frontend | 팀장, main map, ranking, contents, multiSelectbox, dropdown 등 담당, 모든 페이지 총괄 및 해결 |
 | 강민희 | Frontend | review, post modal, autocomplete 담당 |
 | 김혜지 | Frontend | Bookmark, modal, route 담당 |
-| 이화정 | Frontend | user 관련 [login](https://github.com/kailey224/FoCo/tree/main/client/src/component/Login), logout, resister, profile, user정보 수정 등 담당 |
+| *이화정 | Frontend | [Login](https://github.com/kailey224/FoCo/tree/main/client/src/component/Login), [Resister](https://github.com/kailey224/FoCo/tree/main/client/src/component/Register), [Account](https://github.com/kailey224/FoCo/tree/main/client/src/component/Account), [Forgot Password](https://github.com/kailey224/FoCo/tree/main/client/src/component/ForgotPassword), [Header](https://github.com/kailey224/FoCo/tree/main/client/src/component/Header) 등 유저 관련 기능 담당|
 | 한승주 | Backend | Only One, 단 하나의 백엔드 |
 
 ## 🍟 개발 환경
