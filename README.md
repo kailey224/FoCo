@@ -8,7 +8,7 @@
 ## 🥨 프로젝트 소개
 #### 📁 [API 문서](https://documenter.getpostman.com/view/16841571/2s8Z6u5usD)
 #### 🎬 [시연영상 보러가기](https://drive.google.com/file/d/1mi7RB3sVGbb3CG__09OEOTuenbuUF3ju/view?usp=sharing)
-#### 📌 세부항목보기
+#### 📌 항목별 시연연상 보기
 <details><summary>회원가입, 로그인, 로그아웃</summary>
     
 ![image](https://user-images.githubusercontent.com/103574215/213431633-48c932c5-f428-460e-b277-6a5079ea48ec.gif)
